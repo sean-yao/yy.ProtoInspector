@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoInspector", "ProtoInspector\ProtoInspector.csproj", "{10D36978-8FE2-4EFE-8940-0C10EAB40CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleProtoContracts", "SampleProtoContracts\SampleProtoContracts.csproj", "{0F32A9E9-7CA9-45A6-9229-A4CC486E3988}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10D36978-8FE2-4EFE-8940-0C10EAB40CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10D36978-8FE2-4EFE-8940-0C10EAB40CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10D36978-8FE2-4EFE-8940-0C10EAB40CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10D36978-8FE2-4EFE-8940-0C10EAB40CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F32A9E9-7CA9-45A6-9229-A4CC486E3988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F32A9E9-7CA9-45A6-9229-A4CC486E3988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F32A9E9-7CA9-45A6-9229-A4CC486E3988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F32A9E9-7CA9-45A6-9229-A4CC486E3988}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0B92B45-62A6-4E27-9552-00445E797BBC}
+	EndGlobalSection
+EndGlobal
