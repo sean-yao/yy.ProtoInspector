@@ -85,7 +85,7 @@ namespace yy.ProtoInspector
         public override void AddToTab(TabPage o)
         {
             this.protoControl = new ProtoControl(this,this.CreateJsonViewer());
-            o.Text = "ProtoBuf";
+            o.Text = "Protobuf";
             o.Controls.Add(this.protoControl);
             o.Controls[0].Dock = DockStyle.Fill;
         }
