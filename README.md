@@ -8,7 +8,11 @@ A Fiddler Extension for inspecting ProtoBuf in HTTP requests and responses
 4. [JSON.Net](https://www.newtonsoft.com/json)
 
 # Basic Usage
-1. Build the project. The build proces will automatically copy these three files to the directory ```%userprofile%\AppData\Local\Programs\Fiddler\Inspectors``` (if not, please manually copy them to this folder):  
+1. Build the Project
+
+If you installed Fiddler using the default folder: ```%userprofile%\AppData\Local\Programs\Fiddler\Inspectors```. The project will build successfully without any changes. Otherwise, to build the project, you will need to update the references to the Fiddler.exe and the Standard.dll under Fiddler\Inspectros folder from your Fiddler installation directory.
+
+The build proces will automatically copy these three files to the directory ```%userprofile%\AppData\Local\Programs\Fiddler\Inspectors``` (if not, please manually copy them to this folder):  
     * ```Newtonsoft.Json.dll```
     * ```protobuf-net.dll```
     * ```yy.ProtoInspector.dll```
