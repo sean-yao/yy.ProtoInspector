@@ -13,9 +13,9 @@ A Fiddler Extension for inspecting ProtoBuf in HTTP requests and responses
 If you installed Fiddler using the default folder: ```%userprofile%\AppData\Local\Programs\Fiddler\Inspectors```. The project will build successfully without any changes. Otherwise, to build the project, you will need to update the references to the ```Fiddler.exe``` and the ```Standard.dll``` under ```Fiddler\Inspectros``` folder from your Fiddler installation directory.
 The build proces will automatically copy these three files to the Fiddler installation directory ```%userprofile%\AppData\Local\Programs\Fiddler\Inspectors``` (Note: if your installation is different, please manually copy them to the corresponding ```Fiddler\Inspectors``` folder):  
   
-    * ```Newtonsoft.Json.dll```
-    * ```protobuf-net.dll```
-    * ```yy.ProtoInspector.dll```
+    * Newtonsoft.Json.dll
+    * protobuf-net.dll
+    * yy.ProtoInspector.dll
     
 2. Launch Fiddler, select any request, click the "Inspectors" tab page, you can find "Protobuf" subtab. 
 
