@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <FiddlerDir>$(UserProfile)\AppData\Local\Programs\Fiddler</FiddlerDir>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,7 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Fiddler">
-      <HintPath>%userprofile%\AppData\Local\Programs\Fiddler\Fiddler.exe</HintPath>
+      <HintPath>$(FiddlerDir)\Fiddler.exe</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -44,7 +45,7 @@
       <HintPath>..\packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="Standard">
-      <HintPath>%userprofile%\AppData\Local\Programs\Fiddler\Inspectors\Standard.dll</HintPath>
+      <HintPath>$(FiddlerDir)\Inspectors\Standard.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -85,10 +86,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetPath)" "%25userprofile%25\AppData\Local\Programs\Fiddler\Inspectors\$(TargetFilename)"
-copy "$(TargetDir)\Newtonsoft.Json.dll" "%25userprofile%25\AppData\Local\Programs\Fiddler\Inspectors\Newtonsoft.Json.dll"
-copy "$(TargetDir)\protobuf-net.dll" "%25userprofile%25\AppData\Local\Programs\Fiddler\Inspectors\protobuf-net.dll"
+    <PostBuildEvent>
+      copy "$(TargetPath)" "$(FiddlerDir)\Inspectors\$(TargetFilename)"
+      copy "$(TargetDir)\Newtonsoft.Json.dll" "$(FiddlerDir)\Inspectors\Newtonsoft.Json.dll"
+      copy "$(TargetDir)\protobuf-net.dll" "$(FiddlerDir)\Inspectors\protobuf-net.dll"
 
-</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
