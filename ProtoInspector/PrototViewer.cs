@@ -153,6 +153,11 @@ namespace yy.ProtoInspector
                 return 75;
             }
 
+            if (sMIMEType.OICStartsWith("application/x-protobuf"))
+            {
+                return 75;
+            }
+
             return -1;
         }
 
